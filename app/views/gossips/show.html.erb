@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Anonymous author:</strong>
+  <%= @gossip.anonymous_author %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @gossip.content %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @gossip.title %>
+</p>
+
+<%= link_to 'Edit', edit_gossip_path(@gossip) %> |
+<%= link_to 'Back', gossips_path %>
